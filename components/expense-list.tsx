@@ -123,7 +123,7 @@ export function ExpenseList({ expenses, onDeleteExpense, onEditExpense }: Expens
                   <p className="text-sm text-muted-foreground">{formatDate(expense.date)}</p>
                 </div>
                 <div className="flex items-center gap-2 mt-2 sm:mt-0">
-                  <span className="font-semibold">${expense.amount.toFixed(2)}</span>
+                  <span className="font-semibold">₹{expense.amount.toFixed(2)}</span>
                   <div className="flex gap-1">
                     <Button variant="ghost" size="icon" onClick={() => onEditExpense(expense)}>
                       <Edit className="h-4 w-4" />

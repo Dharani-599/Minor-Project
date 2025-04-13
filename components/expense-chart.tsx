@@ -89,7 +89,6 @@ export const ExpenseChart = ({ expenses }: Props) => {
     if (!lineDataMap[nextMonth]) lineDataMap[nextMonth] = { month: nextMonth }
     lineDataMap[nextMonth][category] = Math.max(0, forecast)
   }
-
   const lineData = Object.values(lineDataMap).sort((a, b) =>
     a.month.localeCompare(b.month)
   )
